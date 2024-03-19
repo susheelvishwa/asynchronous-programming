@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="timer">0</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+</body>
+
+<script>
+    let timer = document.querySelector("#timer")
+    let start = document.querySelector("#start")
+    let stopp = document.querySelector("#stop")
+
+
+    let i = 0;
+    function Start(){
+        // let i = 0;
+
+        function cratetimer(){
+            timer.innerHTML = i
+        }
+
+        id1 = setInterval(function(){
+            cratetimer()
+            i++
+        },1000)
+    }
+
+    function Stop() {
+        clearInterval(id1)
+    }
+
+    start.addEventListener("click", function(){
+        Start()
+    })
+
+    stopp.addEventListener("click", function(){
+        Stop()
+    })
+    
+</script>
+</html>
