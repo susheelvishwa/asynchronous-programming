@@ -16,7 +16,7 @@ function handlestart() {
     id1 = setInterval(function () {
         createtimer()
         i++
-    },1000)
+    },10)
 }
 
 function handleStop() {
