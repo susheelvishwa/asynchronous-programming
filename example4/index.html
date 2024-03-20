@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1 id="timer">0</h1>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
+    <center class="center">
+    <h1>TIMER</h1>
+    <div class="contener">
+        <h1 id="timer">0</h1>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+    </div>
+    </center>
 
 </body>
 
 <script>
+
+
     let timer = document.querySelector("#timer")
     let start = document.querySelector("#start")
     let stopp = document.querySelector("#stop")
@@ -26,7 +33,6 @@
         function cratetimer(){
             timer.innerHTML = i
         }
-
         id1 = setInterval(function(){
             cratetimer()
             i++
