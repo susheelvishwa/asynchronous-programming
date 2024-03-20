@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+input {
+    width: 50px;
+    margin: 5px;
+}
+.heading{
+    border-bottom: 1px dotted black;
+    
+}
+
+#timer {
+    font-size: 2em;
+    margin: 20px;
+}
+.main{
+    border: 1px solid black;
+    margin: 100px 150px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 300px;
+    background-color: antiquewhite;
+}
