@@ -1,0 +1,20 @@
+body {
+     font-family: cursive;
+     text-align: center;
+     background-color: rgb(228, 207, 248);
+ }
+ #timer {
+     font-size: 2em;
+     padding: 20px;
+ }
+.main {
+    font-family: cursive;
+    border-radius: 10px;
+    height: 200px;
+    width: 500px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
