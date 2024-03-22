@@ -1,12 +1,12 @@
-const slidesContainer = document.querySelector('.slides');
+const slidesContainer = document.querySelector(".slides-1"); // Updated to '.slides-1'
 let currentIndex = 0;
 
-fetch('db.json')
-  .then(response => response.json())
-  .then(data => {
-    data.product_data.forEach(product => {
-      const slideElement = document.createElement('div');
-      slideElement.classList.add('slide');
+fetch("db.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.product_data.forEach((product) => {
+      const slideElement = document.createElement("div");
+      slideElement.classList.add("slide");
       slideElement.classList.add("image");
       slideElement.classList.add("title");
       slideElement.classList.add("price");
@@ -21,9 +21,9 @@ fetch('db.json')
   });
 
 function changeSlide(direction) {
-  const slides = document.querySelectorAll('.slide');
+  const slides = document.querySelectorAll(".slide");
   const totalSlides = slides.length;
   currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-  const offset = -currentIndex *100;
+  const offset = -currentIndex * 100;
   slidesContainer.style.transform = `translateX(${offset}%)`;
 }

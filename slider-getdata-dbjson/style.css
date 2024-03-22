@@ -1,41 +1,47 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
     font-family: cursive;
 }
-.main{
+
+.main-1 {
     /* border: 1px solid red; */
     margin: 267px auto;
-    background-color:rgb(78, 78, 78);
+    background-color: rgb(78, 78, 78);
     height: 603px;
     position: relative;
 }
-.heading{
+
+.bestsellers {
     height: 60px;
     font-size: 25px;
     padding: 40px;
-
 }
-.slider-container {
+
+.slider-container-1 {
     /* border: 1px solid rgb(43, 0, 255); */
     position: relative;
     width: 80%;
     height: 75%;
-    padding: 10px;}
-.slider {
+    padding: 10px;
+}
+
+.slider-1 {
     /* border: 1px solid rgb(72, 255, 0); */
     overflow: hidden;
     height: 90%;
 }
-.slides {
+
+.slides-1 {
     /* border: 1px solid rgb(0, 0, 0); */
     display: flex;
     transition: transform 0.5s ease;
     /* padding: 10px; */
     height: 100%;
 }
+
 .slide {
     /* border: 1px solid red; */
     flex: 0 0 auto;
@@ -43,8 +49,9 @@ body{
     height: 90%;
     width: 23%;
 }
-.prev,
-.next {
+
+.prev-1,
+.next-1 {
     /* border: 1px solid red; */
     position: absolute;
     top: 50%;
@@ -59,16 +66,18 @@ body{
     border-radius: 50px;
     position: absolute;
 }
-.prev {
+
+.prev-1 {
     /* border: 1px solid red; */
     left: 0;
 }
 
-.next {
+.next-1 {
     /* border: 1px solid red; */
-    right: 0; 
+    right: 0;
 }
-.image{
+
+.image {
     background-color: white;
     gap: 40px;
     color: black;
@@ -76,17 +85,20 @@ body{
     padding: 5px;
     margin: 8px;
 }
+
 .slide img {
     /* width: 50%; */
     border-radius: 10px;
     margin-top: 20px;
-    
+
 }
+
 .slide .product-details {
-    padding:5px 50px;
+    padding: 5px 50px;
 }
-.slide .product-details h3 {
-}
+
+.slide .product-details h3 {}
+
 .slide .product-details p {
     margin-top: 5px;
 }
