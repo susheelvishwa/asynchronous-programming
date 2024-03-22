@@ -1,7 +1,6 @@
 const slidesContainer = document.querySelector('.slides');
 let currentIndex = 0;
 
-// Fetch data from db.json
 fetch('db.json')
   .then(response => response.json())
   .then(data => {
@@ -25,6 +24,6 @@ function changeSlide(direction) {
   const slides = document.querySelectorAll('.slide');
   const totalSlides = slides.length;
   currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-  const offset = -currentIndex * 100;
+  const offset = -currentIndex *100;
   slidesContainer.style.transform = `translateX(${offset}%)`;
 }

@@ -76,3 +76,17 @@ body{
     padding: 5px;
     margin: 8px;
 }
+.slide img {
+    /* width: 50%; */
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+.slide .product-details {
+    padding:5px 50px;
+}
+.slide .product-details h3 {
+}
+.slide .product-details p {
+    margin-top: 5px;
+}
