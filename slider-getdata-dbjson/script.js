@@ -1,4 +1,4 @@
-const slidesContainer = document.querySelector(".slides-1"); // Updated to '.slides-1'
+const slidesContainer = document.querySelector(".slides-1"); 
 let currentIndex = 0;
 
 fetch("db.json")
