@@ -1,5 +1,28 @@
 const slidesContainer = document.querySelector(".slides-1"); 
+const prev = document.querySelector(".prev-1")
+const next = document.querySelector(".next-1");
 let currentIndex = 0;
+
+
+prev.addEventListener("click", handlePrev)
+next.addEventListener("click", handleNext);
+
+var counter = 0
+function handlePrev() {
+  counter--;
+  if (counter < 0) {
+    counter = slide.length - 1;
+  }
+  slideimage();
+}
+
+function handleNext() {
+  counter++;
+  if (counter >= slide.length) {
+    counter = 0;
+  }
+  slideimage();
+}
 
 fetch("db.json")
   .then((response) => response.json())
